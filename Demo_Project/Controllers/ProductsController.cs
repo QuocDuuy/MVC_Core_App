@@ -7,12 +7,14 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Demo_Project.Data;
 using Demo_Project.Models;
+using Demo_Project.Models.ViewModels;
 
 namespace Demo_Project.Controllers
 {
     public class ProductsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        public int pageSize = 9;
 
         public ProductsController(ApplicationDbContext context)
         {
@@ -20,10 +22,49 @@ namespace Demo_Project.Controllers
         }
 
         // GET: Products
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int productPage=1)
         {
-            var applicationDbContext = _context.Products.Include(p => p.Category).Include(p => p.Color).Include(p => p.Size);
-            return View(await applicationDbContext.ToListAsync());
+          
+            return View(
+                new ProductListViewModel
+                {
+                    Products = _context.Products
+                    .Skip((productPage-1)*pageSize)
+                    .Take(pageSize),
+                    PagingInfo = new PagingInfo
+                    {
+                        ItemPerPage = pageSize,
+                        CurrentPage = productPage,
+                        TotalItems = _context.Products.Count()
+                    }
+                }
+                );
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Search(string keywords, int productPage=1)
+        {
+
+            return View("Index",
+                new ProductListViewModel
+                {
+                    Products = _context.Products
+                    .Where(p => p.ProductName.Contains(keywords))
+                    .Skip((productPage - 1) * pageSize)
+                    .Take(pageSize),
+                    PagingInfo = new PagingInfo
+                    {
+                        ItemPerPage = pageSize,
+                        CurrentPage = productPage,
+                        TotalItems = _context.Products.Count()
+                    }
+                }
+                );
+        }
+        public async Task<IActionResult> ProductsByCate(int categoryId)
+        {
+            var applicationDbContext = _context.Products.Where(p => p.CategoryId == categoryId).Include(p => p.Category).Include(p => p.Color).Include(p => p.Size);
+            return View("Index", await applicationDbContext.ToListAsync());
         }
 
         // GET: Products/Details/5

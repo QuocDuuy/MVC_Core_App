@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YBB1nOPNUUcd9ucmqfaH4/YXNIBzEgvP+edyZcyAkmjU8mCt7YrWIRourF+sawdgOKhrYq51SpNp3wa9bcU7zg==",
+  "dgSpecHash": "+SBCRIjqEtGMm2YUptq36xiMmcALOfZXazvBudo72AUP4p/eXp/H2mZZQssbEqCPtkBEo+hZprKtZRGkHLqYkg==",
   "success": true,
-  "projectFilePath": "D:\\Study\\University\\CongNghePhanMem\\test\\Demo_Project\\Demo_Project\\Demo_Project.csproj",
+  "projectFilePath": "D:\\Study\\University\\CongNghePhanMem\\test\\Clone\\Demo_Project\\Demo_Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akira\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\akira\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
