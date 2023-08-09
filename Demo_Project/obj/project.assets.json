@@ -11193,11 +11193,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\University\\CongNghePhanMem\\test\\Demo_Project\\Demo_Project\\Demo_Project.csproj",
+      "projectUniqueName": "D:\\Study\\University\\CongNghePhanMem\\test\\Clone\\Demo_Project\\Demo_Project.csproj",
       "projectName": "Demo_Project",
-      "projectPath": "D:\\Study\\University\\CongNghePhanMem\\test\\Demo_Project\\Demo_Project\\Demo_Project.csproj",
+      "projectPath": "D:\\Study\\University\\CongNghePhanMem\\test\\Clone\\Demo_Project\\Demo_Project.csproj",
       "packagesPath": "C:\\Users\\akira\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\University\\CongNghePhanMem\\test\\Demo_Project\\Demo_Project\\obj\\",
+      "outputPath": "D:\\Study\\University\\CongNghePhanMem\\test\\Clone\\Demo_Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\akira\\AppData\\Roaming\\NuGet\\NuGet.Config",

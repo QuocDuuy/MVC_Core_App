@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Demo_Project",
-    "\\Demo_Project\\Components",
     "\\Demo_Project\\Views",
-    "\\Demo_Project\\Views\\Shared"
+    "\\Demo_Project\\Views\\Products"
   ],
-  "SelectedNode": "\\Demo_Project.sln",
+  "SelectedNode": "\\Demo_Project\\Views\\Products\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
