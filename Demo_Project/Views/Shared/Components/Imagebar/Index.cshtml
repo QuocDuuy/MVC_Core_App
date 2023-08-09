@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Demo_Project.Models.Category>
+
+<div class="container-fluid pt-5">
+    <div class="row px-xl-5 pb-3">
+
+
+
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4 col-md-6 pb-1">
+                <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                    <p class="text-right">15 Products</p>
+                    <a href="/Products/Index/?categoryId=@item.CategoryId" class="cat-img position-relative overflow-hidden mb-3">
+                        <img class="img-fluid" src="@item.CategoryPhoto" alt="">
+                    </a>
+                    <h5 class="font-weight-semi-bold m-0">@item.CategoryName</h5>
+                </div>
+            </div>
+        }
+
+
+
+
+    </div>
+</div>
