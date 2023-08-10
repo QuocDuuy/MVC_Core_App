@@ -20,7 +20,39 @@ namespace Demo_Project.Controllers
         {
             _context = context;
         }
+        public class PriceRange
+        {
+            public int Min { get; set; }
+            public int Max { get; set; }
+        }
+        [HttpPost]
+        public IActionResult GetFilteredProducts([FromBody] FilterData filter)
+        {
+            var filteredProducts = _context.Products.ToList();
+            if(filter.PriceRanges !=null && filter.PriceRanges.Count>0 && !filter.PriceRanges.Contains("all"))
+            {
+                List<PriceRange> priceRanges = new List<PriceRange>();
+                foreach(var range in filter.PriceRanges)
+                {
+                    var value = range.Split("-").ToArray();
+                    PriceRange priceRange = new PriceRange();
+                    priceRange.Min = Int16.Parse(value[0]);
+                    priceRange.Max = Int16.Parse(value[1]);
+                    priceRanges.Add(priceRange); 
+                }
+                filteredProducts = filteredProducts.Where(p=>priceRanges.Any(r=>p.ProductPrice >=r.Min && p.ProductPrice<=r.Max)).ToList();
+            }
+            if (filter.Colors != null && filter.Colors.Count>0 && !filter.Colors.Contains("all"))
+            {
+                filteredProducts = filteredProducts.Where(p=>filter.Colors.Contains(p.Color.ColorName)).ToList();
+            }
 
+            if (filter.Sizes!= null && filter.Sizes.Count>0 && !filter.Sizes.Contains("all"))
+            {
+                filteredProducts = filteredProducts.Where(p=>filter.Sizes.Contains(p.Size.SizeName)).ToList();
+            }
+            return PartialView("_ReturnProducts", filteredProducts);
+        }
         // GET: Products
         public async Task<IActionResult> Index(int productPage=1)
         {
