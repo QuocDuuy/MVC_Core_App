@@ -7,6 +7,6 @@ namespace Demo_Project.Models
         [Key]
         public int SizeId { get; set; }
         [StringLength(10)]
-        public string? ColorName { get; set; }
+        public string? SizeName { get; set; }
     }
 }
