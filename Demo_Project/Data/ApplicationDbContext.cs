@@ -14,5 +14,9 @@ namespace Demo_Project.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Color> Colors { get; set; }
         public DbSet<Size> Sizes { get; set; }
+        public DbSet<OrderInfor> OrderInfor { get; set; }
+        public DbSet<OrderDetail> OrderDetail { get; set; }
+
     }
+
 }

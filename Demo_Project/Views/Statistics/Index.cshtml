@@ -1,0 +1,180 @@
+﻿<style>
+    /* Add padding to table cells for spacing between columns */
+    table th,
+    table td {
+        padding: 10px; /* Adjust the padding as needed */
+    }
+
+    /* Center the table and add a border */
+    .table-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc; /* Add border to the container */
+        padding: 20px; /* Add some padding to the container */
+    }
+
+    /* Adjust the canvas margin */
+    #myChart {
+        margin-top: 20px;
+    }
+
+    /* Reset table styles */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statistics Page</title>
+    <style>
+        /* Add your CSS styles here */
+        /* ... */
+    </style>
+</head>
+<body>
+
+    @model List<Demo_Project.Models.OrderDetail>
+
+    <h1>Statistics</h1>
+
+    <p>Total Revenue: @ViewBag.TotalRevenue</p>
+    <p>Total Orders: @ViewBag.TotalOrders</p>
+    <p>Most Ordered Product: @ViewBag.MostOrderedProduct</p>
+    <p>Least Ordered Product: @ViewBag.LeastOrderedProduct</p>
+    <p>Products InPending Status: @ViewBag.ProductsInPendingStatus</p>
+    <p>Products InPaid Status: @ViewBag.ProductsInPaidStatus</p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Order Date</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Order Status</th> <!-- New column for Order Status -->
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr>
+                        <td>@order.id</td>
+                        <td>@order.product_id</td>
+                        <td>@(order.Product != null ? order.Product.ProductName : "No Product")</td>
+                        <td>@order.cus_date</td>
+                        <td>@order.quantity</td>
+                        <td>@order.total_price</td>
+                        <td>@order.order_status</td> <!-- Display Order Status -->
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Revenue Chart -->
+    <div style="display: flex; flex-direction: row;">
+        <div style="width: 50%; margin-right: 20px;">
+            <canvas id="revenueChart" style="max-width: 100%; max-height: 700px;"></canvas>
+        </div>
+        <div style="width: 50%;">
+            <canvas id="productCountsChart" style="max-width: 100%; max-height: 700px;"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var monthlyRevenue = @Html.Raw(Json.Serialize(ViewBag.MonthlyRevenue));
+        var monthlyProductCounts = @Html.Raw(Json.Serialize(ViewBag.MonthlyProductCounts));
+
+        var ctx1 = document.getElementById('revenueChart').getContext('2d');
+        var revenueChart = new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+                datasets: [{
+                    label: 'Tổng doanh thu',
+                    data: monthlyRevenue,
+                    backgroundColor: 'rgba(54, 162, 235, 0.4)', // Màu nền đậm hơn (blue)
+                    borderColor: 'rgba(54, 162, 235, 1)', // Màu viền đậm hơn (blue)
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        ticks: {
+                            font: {
+                                size: 23
+                            }
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            font: {
+                                size: 23
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            font: {
+                                size: 23 // Đặt kích thước chữ cho các nhãn
+                            }
+                        }
+                    },
+                    tooltip: {
+                        bodyFont: {
+                            size: 23 // Đặt kích thước chữ cho các nội dung tooltip
+                        }
+                    }
+                }
+            }
+        });
+
+        var ctx2 = document.getElementById('productCountsChart').getContext('2d');
+        var productCountsChart = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+                datasets: [{
+                    label: 'Số lượng sản phẩm bán được',
+                    data: monthlyProductCounts,
+                    backgroundColor: 'rgba(255, 99, 132, 0.4)', // Màu nền của cột
+                    borderColor: 'rgba(255, 99, 132, 1)', // Màu viền của cột
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 1 // Đặt bước giá trị trục y
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

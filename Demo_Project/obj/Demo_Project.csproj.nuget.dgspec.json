@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study\\University\\CongNghePhanMem\\test\\Clone\\Demo_Project\\Demo_Project.csproj": {}
+    "F:\\NIIE\\Trước Năm 3\\Năm 3\\Phát triển ứng dụng\\20BITV02_ClothingWebsite_DandS\\20BITV02_ClothingWebsite_DandS\\Source\\MVC_Core_App\\Demo_Project\\Demo_Project.csproj": {}
   },
   "projects": {
-    "D:\\Study\\University\\CongNghePhanMem\\test\\Clone\\Demo_Project\\Demo_Project.csproj": {
+    "F:\\NIIE\\Trước Năm 3\\Năm 3\\Phát triển ứng dụng\\20BITV02_ClothingWebsite_DandS\\20BITV02_ClothingWebsite_DandS\\Source\\MVC_Core_App\\Demo_Project\\Demo_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\University\\CongNghePhanMem\\test\\Clone\\Demo_Project\\Demo_Project.csproj",
+        "projectUniqueName": "F:\\NIIE\\Trước Năm 3\\Năm 3\\Phát triển ứng dụng\\20BITV02_ClothingWebsite_DandS\\20BITV02_ClothingWebsite_DandS\\Source\\MVC_Core_App\\Demo_Project\\Demo_Project.csproj",
         "projectName": "Demo_Project",
-        "projectPath": "D:\\Study\\University\\CongNghePhanMem\\test\\Clone\\Demo_Project\\Demo_Project.csproj",
-        "packagesPath": "C:\\Users\\akira\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\University\\CongNghePhanMem\\test\\Clone\\Demo_Project\\obj\\",
+        "projectPath": "F:\\NIIE\\Trước Năm 3\\Năm 3\\Phát triển ứng dụng\\20BITV02_ClothingWebsite_DandS\\20BITV02_ClothingWebsite_DandS\\Source\\MVC_Core_App\\Demo_Project\\Demo_Project.csproj",
+        "packagesPath": "C:\\Users\\ren91\\.nuget\\packages\\",
+        "outputPath": "F:\\NIIE\\Trước Năm 3\\Năm 3\\Phát triển ứng dụng\\20BITV02_ClothingWebsite_DandS\\20BITV02_ClothingWebsite_DandS\\Source\\MVC_Core_App\\Demo_Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\akira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ren91\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,29 +42,23 @@
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.19, )"
+              "version": "[6.0.21, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.19, )"
+              "version": "[6.0.21, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[6.0.19, )"
+              "version": "[6.0.21, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.20, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.20, )"
+              "version": "[6.0.21, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.15, )"
+              "version": "[6.0.16, )"
             }
           },
           "imports": [
@@ -87,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

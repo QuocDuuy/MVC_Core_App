@@ -9,113 +9,129 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Demo_Project
 build_property.RootNamespace = Demo_Project
-build_property.ProjectDir = D:\Study\University\CongNghePhanMem\test\Clone\Demo_Project\
+build_property.ProjectDir = F:\Learn\Source\Source\MVC_Core_App\Demo_Project\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Study\University\CongNghePhanMem\test\Clone\Demo_Project
+build_property.MSBuildProjectDirectory = F:\Learn\Source\Source\MVC_Core_App\Demo_Project
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Areas/Identity/Pages/_ViewStart.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Cart/Cart.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Cart/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Categories/Create.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Categories/Delete.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Categories/Details.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Categories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Categories/Edit.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Categories/Index.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Home/Index.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Home/Privacy.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Products/Create.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/OrderInfor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJJbmZvclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/OrderInfor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJJbmZvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Products/Delete.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Products/Details.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Products/Edit.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Products/Index.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Shared/Components/CartWidget/Default.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Shared/Components/CartWidget/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydFdpZGdldFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Shared/Components/Imagebar/Index.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Shared/Components/Imagebar/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSW1hZ2ViYXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Shared/Components/JustArrived/Default.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Shared/Components/JustArrived/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSnVzdEFycml2ZWRcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Shared/Components/Navbar/Default.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Shared/Components/Navbar/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmF2YmFyXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Shared/Components/Trendy/Default.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Shared/Components/Trendy/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVHJlbmR5XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Shared/Error.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Shared/_LoginPartial.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Shared/_Product.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Shared/_Product.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Shared/_ValidationScriptsPartial.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Shared/_ReturnProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXR1cm5Qcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/_ViewImports.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Statistics/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/_ViewStart.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/University/CongNghePhanMem/test/Clone/Demo_Project/Views/Shared/_Layout.cshtml]
+[F:/Learn/Source/Source/MVC_Core_App/Demo_Project/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2lz1gndf0w
