@@ -45,3 +45,16 @@
 }
     </tbody>
 </table>
+
+@foreach (var category in Model)
+{
+    <tr>
+        <td>@category.CategoryName</td>
+        <td>@category.CategoryOrder</td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = category.CategoryId }) |
+            <!--Thêm các liên kết khác như chi tiết và xóa nếu cần-->
+        </td>
+    </tr>
+}
+

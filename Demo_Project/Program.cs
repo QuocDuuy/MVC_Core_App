@@ -39,9 +39,20 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+
+    // Add the route for ProductsController
+    endpoints.MapControllerRoute(
+        name: "products",
+        pattern: "Products/{action=Index}/{id?}",
+        defaults: new { controller = "Products" });
+
+    // Add more routes if needed
+});
 app.MapRazorPages();
 
 app.Run();
